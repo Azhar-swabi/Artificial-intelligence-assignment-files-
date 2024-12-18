@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/azhar/ontologies/2024/11/SkeletalSystem.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/azhar/ontologies/2024/11/SkeletalSystem.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/azhar/ontologies/2024/11/SkeletalSystem.owl/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AppendicularBone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AxialBone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoneType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#articulatesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFunction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Femur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlatBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LongBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Skull"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AppendicularBone"/>
+        <Class IRI="#Bone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AxialBone"/>
+        <Class IRI="#Bone"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AppendicularBone"/>
+        <Class IRI="#AxialBone"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BodyRegion"/>
+        <Class IRI="#Bone"/>
+        <Class IRI="#BoneType"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AppendicularBone"/>
+        <NamedIndividual IRI="#Femur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneType"/>
+        <NamedIndividual IRI="#FlatBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneType"/>
+        <NamedIndividual IRI="#LongBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AxialBone"/>
+        <NamedIndividual IRI="#Skull"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#Femur"/>
+        <NamedIndividual IRI="#Femur"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#Skull"/>
+        <NamedIndividual IRI="#Skull"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#Femur"/>
+        <Literal>Supports weight of the body and allows movement.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Femur"/>
+        <Literal>Femur</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#Skull"/>
+        <Literal>Supports weight of the body and allows movement</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Skull"/>
+        <Literal>Skull</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#articulatesWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#locatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#articulatesWith"/>
+        <Class IRI="#Bone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Bone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#Bone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#articulatesWith"/>
+        <Class IRI="#Bone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#BoneType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#BodyRegion"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasFunction"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFunction"/>
+        <Class IRI="#Bone"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Bone"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Bone"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFunction"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
